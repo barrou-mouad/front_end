@@ -1,6 +1,6 @@
 <template>
 
-    <div class="">
+    <div class="mystle">
     <div class="main-body">
     
           <div class="row gutters-sm">
@@ -317,5 +317,9 @@ a:hover{
 .list-group-item:hover h6{
   color:#00c0ef;
   cursor: pointer;
+}
+.mystle{
+  width:90%;
+  margin :0 auto
 }
 </style>

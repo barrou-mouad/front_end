@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="mx-auto">
 <!--     <div v-if="msg">{{msg}}</div>
     <h1 class="text-center">Gestion Etudiant</h1>
     <table class="table container w-75 text-center table-bordered">

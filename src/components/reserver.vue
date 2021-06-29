@@ -26,7 +26,7 @@
               <div class="col-3" >
                  <!-- heure_debut -->
                 <select :id="'date'+msg" @change="getsalle()" >
-            <option :value="ja" v-for="(ja,key) in jour" :key="key">{{ja}}</option>
+            <option :value="ja" v-for="(ja,key) in jour" :key="key">{{time[ja].val}}</option>
             </select>
         </div>
                      <div class="col-2" >
@@ -58,6 +58,7 @@ export default {
   data(){
     return{
     planing:[{id:1,jour:"Lundi"},{id:2,jour:"Mardi"},{id:3,jour:"Mercredi"},{id:4,jour:"Jeudi"},{id:5,jour:"Vendredi"},{id:6,jour:"Samedi"}],
+    time:[{},{id:1,val:"matin"},{id:2,val:"soire"}],
     jour:[],
     modules:[],
     salles:[],

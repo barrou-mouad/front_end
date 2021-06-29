@@ -21,21 +21,25 @@
               <div class="card mt-3" >
                 
               <ul class="list-group list-group-flush" >
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="cursor:pointer" >
+                  <li v-if="$store.state.etudiant.semestre_id!=6"  class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="cursor:pointer" >
                     <h6 class="mb-0"> <i class="fas fa-user-alt"></i> Mes informations personnels</h6>
                     
                   </li>
                 
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="cursor:pointer">
+                  <li v-if="$store.state.etudiant.semestre_id!=6" class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="cursor:pointer">
   
                     <h6 class="mb-0"> <i class="fas fa-calendar-week"></i> Mon Emploi du temps</h6>
                     
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="cursor:pointer">
+                  <li v-if="$store.state.etudiant.semestre_id!=6" class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="cursor:pointer">
                     <h6 class="mb-0"> <i class="far fa-sticky-note"></i> Mes Notes</h6>
                   
                   </li>
-          
+                       <li v-if="$store.state.etudiant.semestre_id==6" class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="cursor:pointer">
+                    <h6 class="mb-0">  <i class="fas fa-graduation-cap"></i> Mon PFE</h6>
+                  
+                  </li>
+         
            
                 </ul>
               </div>

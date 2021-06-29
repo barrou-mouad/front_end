@@ -112,7 +112,7 @@
 
 <!-- les etudiant -->
                         <div class="tab-pane fade" id="tab-friends">
-                            <h1 style="text-align:center">La gestion des etudiants</h1>
+                            
                             <br>
 
                     <div class="row gutters-sm">

@@ -3,7 +3,7 @@
   
     <ul class="list-group my-3">
       <div class="text-center bg-white w-50 mx-auto" > <h1> Modules</h1></div>
-  <li class="list-group-item w-50 mx-auto" @click="getAll(module.id)" v-for="module in modules" :key="module.id">{{module.intitule}}</li>
+  <li  class="list-group-item w-50 mx-auto " :id="'s'+key"  @click="getAll(module.id,key);" v-for="module in modules" :key="module.id">{{module.intitule}}</li>
 
 </ul>
 <div class="my-2" v-if="Notes">
@@ -24,35 +24,11 @@
 <td class="note"><span> {{note.note}}</span><input type="text"  v-model="manote" style="display:none"></td>
 <td>
 <input type="button"  value="Modifier" v-show="!test" :id="'b'+key" class="btn btn-success bedit" @click="edit('b'+key)"  >
-<input type="button"  value="Valider" class="btn btn-primary bval" @click="valider(key)" style="display:none">
+<input type="button"  value="Valider" class="btn btn-primary bval" @click="valider(key);" style="display:none">
 </td>
 </tr>
 </tbody>
-</table>   
-
-<!--  
-  <div class="modal fade" id="Ajouter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ajouter un element au tableau</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-         <form>
-             <p>Nom et Prenom : {{current.nom}}</p>
-             <p >Note Actuelle : {{current.note}}</p>
-            
-             <input  type="text"   class="form-control my-2" placeholder="Nouvelle note">
-         </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-warning mx-1" data-bs-dismiss="modal" id="update" >Update</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
+</table>  
 
   </div>
 </template>
@@ -84,12 +60,13 @@ export default {
      });
   },
   methods:{
-      getAll:function($id){
+      getAll:function($id,key){
       
     axios.get('http://127.0.0.1:8000/api/getNotes/'+$id).then(response =>{
      this.Notes= response.data;
      console.log(response.data);
- 
+ $('li').removeClass('active');
+ $('#s'+key).addClass('active');
      });    
       },
       edit(test){

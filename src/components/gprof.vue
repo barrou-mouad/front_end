@@ -1,7 +1,7 @@
 <template>
-  <div class="">
+  <div class="mx-auto">
     <h1 class="text-center">La gestion des profs</h1>
-    <table class="table container w-75 text-center table-bordered">
+    <table class="table  w-75 text-center table-bordered">
         <tr>
             <th>Nom Prenom</th>
               <th>Actions</th>
@@ -12,7 +12,8 @@
             mx-2"><i class="fas fa-user-minus"></i></button></td>
         </tr>
     </table>
-<!-- Modal -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ajouter" @click="add()"><i class="fas fa-plus-circle"></i> Ajouter</button>
+
   <div class="modal fade" id="Ajouter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -50,9 +51,10 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          <button type="button" @click="valider" class="btn btn-warning mx-1" data-bs-dismiss="modal" id="update" >Modifier</button>
+          <button type="button" @click="valider()" class="btn btn-warning mx-1" v-if="show" data-bs-dismiss="modal" id="update" >Modifier</button>
+          <button type="button" @click="confirmer()" class="btn btn-warning mx-1" v-else data-bs-dismiss="modal" id="update" >Valider</button>
         </div>
-      </div>
+      </div>()
     </div>
   </div>
   
@@ -68,6 +70,7 @@ export default {
   },
   data(){
       return{
+        show:null,
       prof :[],
       p:{
         id:"",
@@ -84,6 +87,35 @@ export default {
       }
   },
   methods:{
+add(){
+this.show=null
+this.p.id=null;
+this.p.nom="";
+this.p.prenom="";
+this.p.tel="";
+this.p.cin="";
+this.p.lieu_naissance="";
+this.p.date_naissance="";
+this.p.adresse="";
+this.p.password="";
+this.p.email="";
+},
+confirmer(){
+ axios.post('http://127.0.0.1:8000/api/addprof',this.p).then(response =>{
+this.afficher();
+this.p.id="";
+this.p.nom="";
+this.p.prenom="";
+this.p.tel="";
+this.p.cin="";
+this.p.lieu_naissance="";
+this.p.date_naissance="";
+this.p.adresse="";
+this.p.password="";
+this.p.email="";
+console.log(response)
+ }).catch(error=>{console.log(error)})
+},
 supp(i){
          axios.get('http://127.0.0.1:8000/api/deleteprof/'+i).then(response =>{
      this.afficher();
@@ -97,6 +129,7 @@ afficher(){
      });
 },
 edit(id){
+this.show="show"
 this.p.id=this.prof[id].id;
 this.p.nom=this.prof[id].nom;
 this.p.prenom=this.prof[id].prenom;

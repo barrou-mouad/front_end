@@ -44,7 +44,7 @@
                                 <td class="bg-light-white">
                                   <div v-if="planing[2]">
                                   <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">{{planing[2].intitule}}</span> 
-                                    <div class="font-size13 text-dark ">{{planing[2].salle}}</div></div>
+                                    <div class="font-size13 text-dark mt-2">{{planing[2].salle}}</div></div>
                                 </td>
                                 <td>
                                   <div>
@@ -188,7 +188,7 @@ return{
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 body{
     margin-top:20px;

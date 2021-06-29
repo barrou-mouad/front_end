@@ -1,7 +1,7 @@
 
 <template>
 
-<div class="container" >
+<div class="" >
                 <div class="timetable-img text-center">
                     <img src="img/content/timetable.png" alt="">
                 </div>
@@ -46,7 +46,7 @@
                                 <td class="bg-light-white">
                                   <div v-if="planing[2]">
                                   <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">{{planing[2].intitule}}</span> 
-                                    <div class="font-size13 text-dark ">{{planing[2].salle}}</div></div>
+                                    <div class="font-size13 text-dark mt-2">{{planing[2].salle}}</div></div>
                                 </td>
                                 <td>
                                   <div>
@@ -68,7 +68,7 @@
                                 <td class="bg-light-white" >
                                     <span v-if="planing[4]">
                                     <span  class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">{{planing[4].intitule}}</span>
-                                    <div class="font-size13 text-dark ">{{planing[4].intitule}}</div>
+                                    <div class="font-size13 text-dark mt-2">{{planing[4].salle}}</div>
                                     </span>
                                 </td>
                                 <td>
@@ -80,7 +80,7 @@
                                 <div v-if="planing[5]">
                                 <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">{{planing[5].intitule}}</span>
                                  
-                                 <div class="font-size13 text-dark mt-1">{{planing[5].salle}} </div></div>
+                                 <div class="font-size13 text-dark mt-2">{{planing[5].salle}} </div></div>
                                 </td>
                                 
                             </tr>

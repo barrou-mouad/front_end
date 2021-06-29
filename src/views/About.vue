@@ -69,7 +69,7 @@
                                 <h3>Registration</h3>
                                 <p>Former des ingénieurs informatiques spécialisés dans les techniques avancées du développement logiciel, notamment le développement et la validation &amp; vérification des systèmes en réseau (spé. Ingénierie Systèmes et Logiciels) Concepteur, architecte et développeur logiciel ; Métiers du Cycle de Vie des Applications : responsable de systèmes applicatifs et ingénieur validation ; Ingénieur d’études et développement ; Gestionnaire et intégrateur d’applications ; Chef de projet informatique (après quelques années d’expérience) ; Métiers de la recherche en Informatique, avec une poursuite d’études en Doctorat</p>
                             </li>
-                            <li class="event" data-date="2:30 - 4:00pm">
+                            <li class="event" data-date="Les conditions">
                                 <h3>Conditions d'admission</h3>
                                 <p><ul><li>Être titulaire d’un DUT ou d’une Licence scientifique (math, math-info) ;</li>
                                 <li>Une expérience professionnelle dans le secteur du numérique est souhaitée ;</li>

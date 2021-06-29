@@ -29,9 +29,9 @@
                 <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"><a href="event-details.html" class="text-theme-color">Ingénieurs Logiciels et Systèmes Intélligents</a></h5>
                 <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
                     <li><i class="far fa-clock margin-10px-right"></i> 09:00 AM - 09:30 PM</li>
-                    <li><i class="fas fa-user margin-5px-right"></i> Speaker : Alexa Zone</li>
+                    <li><i class="fas fa-user margin-5px-right"></i> coordinateur : ELAACHAK Lotfi </li>
                 </ul>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p>
+                <p>L'inscription au concours d'accès à la première et à la deuxième année du cycle ingénieur "Logiciels & Systèmes Intelligents" pour l'année universitaire 2021/2022.</p>
             </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2">

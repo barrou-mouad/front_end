@@ -11,7 +11,7 @@
     
     <label class="control-form my-1" style="font-size:20px" >Mot de passe</label>
        <div id="alpass" class="alert alert-danger" style="display:none">Le mot de passe est obligatoire </div>
-  <input  @keyup.enter="login;" id="pass" v-model="$store.state.isetudiant.password" class="form-control my-1" style="height:55px" type="text" placeholder="Mot de passe"> 
+  <input  @keyup.enter="login()" id="pass" v-model="$store.state.isetudiant.password" class="form-control my-1" style="height:55px" type="password" placeholder="Mot de passe"> 
     <input type="button"  @click="login " class="btn btn-primary my-4" value="Se connecter">
   <div class="alert alert-danger" v-show="ok">Email ou Mot de passe incorrecte</div>
   </div>  </div>

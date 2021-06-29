@@ -9,7 +9,7 @@
     <input v-model="$store.state.isadmin.email" id="em" class="form-control my-1" style="height:55px" type="text" placeholder="Nom"> 
      <div id="alem" class="alert alert-danger" style="display:none">L'email est obligatoire </div>
     <label class="control-form my-1" style="font-size:20px" >Mot de passe</label>
-  <input v-model="$store.state.isadmin.password" id="pass" class="form-control my-1" style="height:55px" type="text" placeholder="Mot de passe"> 
+  <input v-model="$store.state.isadmin.password" id="pass" class="form-control my-1" style="height:55px" type="password" placeholder="Mot de passe"> 
     <div id="alpass" class="alert alert-danger" style="display:none">Le mot de passe est obligatoire </div>
     <input type="button" @click="login() " class="btn btn-primary my-4" value="Se connecter">
   </div>  </div>

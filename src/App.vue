@@ -13,9 +13,6 @@
       <router-link to="/about" tag="li">
       <a href="">About</a>
       </router-link>   
-      <router-link to="/contact_us" tag="li">
-      <a href="">Contact Us</a>
-      </router-link>  
     </ul>
  </div>
     
@@ -27,25 +24,22 @@
     <footer>
       <div class="container">
         <dir class="row">
-          <div class="col-sm-6 col-md-3 item">
-            <h3>Service</h3>
+   
+          <div class="col-sm-4 col-md-4 item">
+            <h3>LIEN UTILISE</h3>
             <ul>
-              <li><a href="#">FSTT</a></li>
-              <li><a href="#">FSTT</a></li>
-              <li><a href="#">FSTT</a></li>
+                 <li><a href="#">Site officiel de FSTT</a></li>
+                 <li><a href="#">Enseignement Supérieur</a></li>
+                 <li><a href="#"></a></li>
             </ul>
           </div>
-          <div class="col-sm-6 col-md-3 item">
-            <h3>Service</h3>
-            <ul>
-              <li><a href="#">FSTT</a></li>
-              <li><a href="#">FSTT</a></li>
-              <li><a href="#">FSTT</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 item text">
-            <h1>LSI</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae velit veritatis illo quis hic animi eum aperiam! Dolores exercitationem magni excepturi repellendus recusandae consequuntur deleniti debitis, voluptas ducimus tenetur?</p>
+          <div class="col-md-8 item text">
+            <h1>FSTT</h1>
+            <p>
+            Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc <br>
+             + 212 (0) 5 39 39 39 54 / 55 <br>
+            administration@fstt.ac.ma <br>
+            Faculté des Sciences et Techniques de Tanger - Université Abdelmalek Essaâdi - www.fstt.ac.ma</p>
           </div>
         </dir>
         <p class="copyright">Company Name c 2021</p>
